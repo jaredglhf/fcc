@@ -1,0 +1,1 @@
+This is just a bunch of stuff from freecodecamp. I thought I would put it up here to also help with my practice using git.
