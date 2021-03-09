@@ -1,0 +1,28 @@
+img{
+    max-width: 100%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+}
+
+.header {
+    
+}
+
+.section {
+    padding: 30px 0px 30px 0px
+}
+
+#title {
+    text-align: center;
+    background: #A0AAB2;
+}
+
+#img-div{
+    margin: 20px 10px 20px 10px;
+    background: #A0AAB2;
+}
+
+#image {
+    displa
+}
