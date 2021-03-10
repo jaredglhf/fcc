@@ -1,19 +1,24 @@
 body{
-    background:  #CCFFFF;
-    padding: 0px 300px  0px;
+    background: #F5F5F5;
+    padding: 0px 100px  0px;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat';
 }
 
-h2 {
-    font-family: 'Montserrat';
+p {
+    font-family: 'Open Sans';
+    font-size: 1rem;
+}
+
+hr {
+    color: gainsboro;
 }
 
 #header{
     text-align: center;
-    padding: 50px;
+    margin: 50px;
 }
 
 #header-img {
@@ -21,16 +26,42 @@ h2 {
     height: auto;
 }
 
+#extra-info{
+    text-align: center;
+}
+#info {
+    margin: 10px 0px 50px 0px;
+}
+
+.project-type{
+    margin-top: 20px;
+}
+
 .project-row {
+    margin: 35px; 
     display: grid;
-    /*grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: minmax(100px, auto); */
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-column-gap: 30px;
 }
 
 .project-item-left {
-    grid-row: 1 / 2;
+    grid-row: 1;
+    grid-column: 1 / 2;
+    text-align: center;
 }
 
 .project-item-right {
-    grid-row: 3 / 4;
+    grid-row: 1;
+    grid-column: 2 / 3;
+    text-align: center;
+}
+
+.project-thumbnail {
+    box-shadow: 5px 10px 10px #888888;
+    margin-bottom: 20px;
+}
+
+.project-thumbnail:hover {
+    
 }
