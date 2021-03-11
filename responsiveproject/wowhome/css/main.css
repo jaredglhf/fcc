@@ -1,0 +1,273 @@
+/* HEADER STUFFS */
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-top: 2px
+    
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+#header-hero {
+    color: ;
+    font-size: 5vw;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#subtitle-hero {
+    font-size: 2vw;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* RESIZEABLE BUTTONS */
+
+@media (max-width: 768px) {
+  .btn {
+    font-size:13px;
+    padding:4px 6px;
+  }
+    .graphic {
+        display: none
+    }
+    
+    #moreton {
+        visibility: hidden;
+    }
+    
+    #woman {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+  .btn {
+    font-size:14px;
+    padding:6px 12px;
+  }
+    .graphic {
+        display: none
+    }
+}
+
+@media (min-width: 992px) {
+  .btn {
+    font-size:18px;
+    padding:8px 12px;
+  }
+    .graphic {
+        
+    }
+}
+
+@media (min-width: 1200px) {
+  .btn {
+    padding:10px 16px;
+    font-size:20px;
+  }
+    .graphic {
+        display: block
+    }
+}
+
+
+/* PAGE CONTENT */
+
+.title {
+    font-family: 'Montserrat', sans-serif;    
+}
+
+.graphic {
+    height: 70px;
+    width: 70px;
+    position: fixed
+    top: 30%;
+}
+
+
+
+nav {
+    outline-style: solid;
+    outline-color: gold;
+    outline-width: thick;
+}
+
+.hp-link {
+    text-align: right;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    position: absolute;
+    top: 30%;
+}
+
+.hidden {
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 15px
+}
+
+.dotpoint {
+    justify-content: center
+}
+
+.contact {
+    height: 90px;
+    width: 90px;
+    display:block;
+    margin:auto;
+}
+
+.contact-info {
+    font-family: 'Montserrat', sans-serif; 
+    text-align: center;
+}
+
+.contact-button {
+    justify-content: center;
+    display:block;
+    margin:auto;
+}
+
+.phonenumber {
+    background-color: white;
+    border-left: 5px solid gold;
+   padding-top: 20px
+}
+
+.sidetext {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.sidetitle {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px
+} 
+
+.featureimg {
+    width: 80px;
+}
+
+
+figure {
+        margin: 16px 40px !important; 
+    }
+    .img-fluid {
+      max-width: 100%;
+      height: auto;
+    }
+
+label {
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+}
+
+.srvimg{
+    height: auto
+    
+}
+
+.abtyt {
+    display: block;
+    margin: auto;
+    padding-top: 20px;
+    width: 750px;
+    height: 410px;
+}
+
+.slm {
+    height: 110px;
+    width: auto;
+    display: block;
+    margin: auto;
+    
+}
+
+.feat {
+    height: 200px;
+    display: block;
+    margin: auto;
+    width: 200px;    
+}
+
+.bdiv {
+    border-left: 1px solid #d1d4d7;
+}
+
+body {
+    background-color: #e9ecef
+}
+
+p {
+    font-family: 'Lato';
+}
+
+.okay {
+    width: 70%;
+    margin: auto;
+}
+/* FOOTER STUFF */
+
+.footer-distributed{
+	background-color: #d1d4d7;
+	width: 100%;
+	text-align: left;
+	font: normal 16px sans-serif;
+	padding: 45px 50px;
+	margin-top: 80px;
+}
+
+.footer-distributed .footer-left p{
+	color:  #8f9296;
+	font-size: 14px;
+	margin: 0;
+}
+
+.footer-distributed p.footer-links{
+	font-size:18px;
+	font-weight: bold;
+	color:  black;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.footer-distributed p.footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-right{
+	float: right;
+	margin-top: 6px;
+	max-width: 180px;
+}
+
+.footer-distributed .footer-right a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	background-color: #d1d4d7;
+	border-radius: 2px;
+	font-size: 20px;
+	color: black;
+	text-align: center;
+	line-height: 35px;
+	margin-left: 3px;
+}

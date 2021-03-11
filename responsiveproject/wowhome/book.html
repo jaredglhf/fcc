@@ -1,0 +1,227 @@
+<!DOCTYPE HTML>
+<html>
+    
+<head>
+    <title>Bookings | WOW Home and Office Services</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Allerta|Nunito+Sans|Roboto+Condensed|Lato" rel="stylesheet">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <script type="text/javascript">
+        
+        function toggle_visibility() {
+            var e = document.getElementById("options");
+                if(e.style.display == 'block')
+            e.style.display = 'none';
+                else
+            e.style.display = 'block';
+}
+        
+        $( function() {
+            $( "#datepicker" ).datepicker();
+        } );
+        
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <a class="navbar-brand" href="index.html">
+            <span><img src="images/logo.jpg"/ style="height: 50px"></span>
+            	WOW Home and Office Services
+    </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Services </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="services.html">Main</a>
+                <a class="dropdown-item" href="services.html#regular">Regular Clean</a>
+                <a class="dropdown-item" href="services.html#catchup">Catchup Clean</a>
+                <a class="dropdown-item" href="services.html#spring">Spring Clean</a>
+              </div>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About us</a>
+          </li>
+        </ul>        
+          
+      </div>
+    </nav>
+    
+    <!-- HERO IMAGE -->    
+    <div class="hero-image">
+        <img class="hero-image" src="images/headers/book%20header.png">
+    </div>
+    
+    <div class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <h1 class="title">Get Started!</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pharetra mauris a ipsum vestibulum, nec efficitur lacus fringilla. Nam purus erat, tristique nec aliquet faucibus, mattis vel tortor. Pellentesque efficitur arcu eu sem suscipit efficitur. Vivamus aliquet ipsum id maximus feugiat. In vitae enim quis nisl consectetur congue semper nec eros.</p>
+                </div>
+                <div class="col-4">
+                   <img src="images/icons/vacuum.png" class="img-fluid" style="height: 150px; display: block; margin: auto">
+                </div>
+            </div>
+            <hr>
+            <br>
+            <h2 class="title">Service Information</h2>
+            
+            <form action="//submit.form" id="ContactUs100" method="post">
+                <!-- START FORM -->
+                <div class="form-group">
+                    <hr>
+                    <br>
+                    <label for="Services">Please select a service</label>
+                    <select class="form-control" name="Services" onchange="toggle_visibility(options);">
+                        <option>Please select...</option> 
+                        <option value="1">Regular Clean</option>
+                        <option value="2">One-off Clean</option>
+                        <option value="3">Spring Clean</option>
+                    </select>
+                </div>
+                <br>
+            <!--START HIDDEN FORM-->    
+            <div id="options" style="display: none;">    
+                <div class="row">
+                    
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="Hours">How many hours will we need?*:</label>
+                            <input class="form-control" type="number" name="hours" step="0.5" min="0.5" value="2" autocomplete="off" required="">
+                        </div>
+                    </div>
+                    
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="Date">Date</label>
+                            <input name="Date" type="text" id="datepicker" class="form-control" required>
+                        </div>             
+                    </div>
+                    
+                </div>
+                <br>
+            <h2 class="title">Your Information</h2>
+                <hr>
+                <br>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="First Name">First Name*</label>
+                            <input placeholder="John" name="First Name" type="text" maxlength="90" class="form-control" required />
+                        </div>
+                    </div>
+                
+                
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="Last Name">Last Name*:</label>
+                        <input placeholder="Doe" class="form-control" name="Last Name" type="text" maxlength="60" required>
+                    </div>
+                </div>
+                </div>  
+                <br>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="FromEmailAddress">Email address*</label>
+                            <input placeholder="john.doe@example.com" name="FromEmailAddress" type="text" maxlength="90" class="form-control" required/>
+                        </div>
+                    </div>
+                
+                
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="PhoneNumber">Phone number*:</label>
+                            <input placeholder="04123456" class="form-control" name="PhoneNumber" type="text" maxlength="60" required>
+                        </div>
+                    </div>
+                </div>
+                
+                <br>
+                
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="Address 1">Address Line 1:*</label>
+                            <input placeholder="12 Ann Street" name="Address 1" type="text" maxlength="90" class="form-control" required/>
+                        </div>
+                    </div>
+                
+                
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="Address 2">Address Line 2 (optional):</label>
+                            <input placeholder="appartment no. 27" class="form-control" name="Address 2" type="text" maxlength="60">
+                        </div>
+                    </div>
+                </div>
+                
+                <br>
+                
+                 <div class="row">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="Suburb">Suburb:*</label>
+                            <input placeholder="Burpengary" name="Suburb" type="text" maxlength="90" class="form-control" required/>
+                        </div>
+                    </div>
+                
+                
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="Postcode">Postcode:*</label>
+                            <input placeholder="1234" class="form-control" name="Postcode" type="text" maxlength="4" required>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="Comments">Any Comments? (optional):</label>
+                    <textarea class="form-control" name="Comments" rows="5" cols="40" ></textarea>
+                </div>
+               
+                
+               
+                
+                <button class="btn btn-warning" name="skip_Submit" type="submit" value="Submit" style="display: block; margin: auto">Submit!</button>
+                
+                    <script src="https://www.100forms.com/js/FORMKEY:Y3A3UUELG35X/SEND:flyjcar@gmail.com" type="text/javascript"></script>
+                            <a href="https://www.100forms.com" id="lnk100" title="web forms" style="display: none">web forms</a>
+                  
+            </div>    
+    </form>
+     
+        </div>
+    </div>
+</body>
+    
+<footer class="footer-distributed sticky-bottom">
+    <div class="footer-right">
+        <a href="https://www.facebook.com/StEugeneCollegeBurpengary/"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/bluthquotes"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.youtube.com/user/steugenecollege"><i class="fa fa-youtube"></i></a>
+    </div>
+    <div class="footer-left">
+
+        <p class="footer-links">
+					
+				<p>Copyright 2018</p>
+			</div>
+		</footer>    
+    
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE HTML>
+<html>
+    
+<head>
+    <title>WOW Home and Office Services</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Allerta|Nunito+Sans|Roboto+Condensed|Lato" rel="stylesheet">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    
+    <script type="text/javascript">
+        function toggle_visibility(hide1) {
+            var e = document.getElementById(hide1);
+            if(e.style.display == 'block')
+            e.style.display = 'none';
+        else
+            e.style.display = 'block';
+        }
+        
+        function toggle_visibility(hide2) {
+            var e = document.getElementById(hide2);
+            if(e.style.display == 'block')
+            e.style.display = 'none';
+        else
+            e.style.display = 'block';
+        }
+        
+        function toggle_visibility(hide3) {
+            var e = document.getElementById(hide3);
+            if(e.style.display == 'block')
+            e.style.display = 'none';
+        else
+            e.style.display = 'block';
+        }
+    </script>
+    
+</head>
+
+<body>
+<!-- NAVBAR -->    
+   <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <a class="navbar-brand" href="index.html">
+            <span><img src="images/logo.jpg"/ style="height: 50px"></span>
+            	WOW Home and Office Services
+    </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Services </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="services.html">Main</a>
+                <a class="dropdown-item" href="services.html#regular">Regular Clean</a>
+                <a class="dropdown-item" href="services.html#catchup">Catchup Clean</a>
+                <a class="dropdown-item" href="services.html#spring">Spring Clean</a>
+              </div>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About us</a>
+          </li>
+        </ul>        
+          <button class="btn btn-warning my-2 my-sm-0" onclick="window.location.href='book.html'">Book now!</button>
+      </div>
+    </nav>
+<!-- HERO IMAGE -->    
+    <div class="hero-image">
+        <img class="hero-image" src="images/headers/homepage.png">
+        <div class="hero-text">
+            <h1 id="header-hero" style="visibility: hidden">Live Smarter</h1>
+            <p id="subtitle-hero" style="visibility: hidden">Let us do your housework</p>
+            <button type="button" class="btn btn-warning" onclick="window.location.href='book.html'">Get Booked Now!</button>
+        </div>
+    </div>
+    
+    
+  <!-- WHAT WE HAVE TO OFFER -->  
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="title">What we have to offer</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pharetra mauris a ipsum vestibulum, nec efficitur lacus fringilla. Nam purus erat, tristique nec aliquet faucibus, mattis vel tortor. Pellentesque efficitur arcu eu sem suscipit efficitur. Vivamus aliquet ipsum id maximus feugiat. In vitae enim quis nisl consectetur congue semper nec eros.</p>
+            <hr>
+            <br>
+            <div class="row">
+                <div class="col-1">
+                    <img src="images/icons/house.png" class="graphic"> 
+                </div> 
+                <div class="col-9">
+                    <h3 class="title">Regular Clean</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pharetra mauris a ipsum vestibulum, nec efficitur lacus fringilla. Nam purus erat, tristique nec aliquet faucibus, mattis vel tortor. Pellentesque efficitur arcu eu sem suscipit efficitur. Vivamus aliquet ipsum id maximus feugiat. In vitae enim quis nisl consectetur congue semper nec eros. Quisque gravida purus justo, vel dictum nisi blandit et. Donec condimentum justo et tortor pulvinar malesuada. Curabitur ac libero neque. </p>
+                    <div id="hide1" style="display: none">
+                        <p class="hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pharetra mauris a ipsum vestibulum, nec efficitur lacus fringilla. Nam purus erat, tristique nec aliquet faucibus, mattis vel  vel tortor. Pellentesque efficitur arcu eu sem suscipit efficitur. Vivamus aliquet ipsum id maximus feugiat. In vitae enim quis nisl consectetur congue semper nec eros. <a href="services.html#regular">See more...</a> </p>
+                    </div>
+                </div>
+                
+                <div class="col-2">
+                    <br>
+                    <button type="button" class="btn btn-warning hp-link" onclick="toggle_visibility('hide1');">Learn More</button>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-1">
+                    <img src="images/icons/clock.png" class="graphic"> 
+                </div> 
+                <div class="col-9 offer-text">
+                    <h3 class="title">Catchup Clean</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pharetra mauris a ipsum vestibulum, nec efficitur lacus fringilla. Nam purus erat, tristique nec aliquet faucibus, mattis vel tortor. Pellentesque efficitur arcu eu sem suscipit efficitur. Vivamus aliquet ipsum id maximus feugiat. In vitae enim quis nisl consectetur congue semper nec eros. Quisque gravida purus justo, vel dictum nisi blandit et. Donec condimentum justo et tortor pulvinar malesuada. Curabitur ac libero neque. </p>
+                    
+                    <div id="hide2" style="display: none">
+                        <p class="hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pharetra mauris a ipsum vestibulum, nec efficitur lacus fringilla. Nam purus erat, tristique nec aliquet faucibus, mattis vel vel tortor. Pellentesque efficitur arcu eu sem suscipit efficitur. Vivamus aliquet ipsum id maximus feugiat. In vitae enim quis nisl consectetur congue semper nec eros. <a href="services.html#catchup">See more...</a></p>
+                    </div>
+                </div>
+                
+                <div class="col-2">
+                    <br>
+                    <button type="button" class="btn btn-warning hp-link" onclick="toggle_visibility('hide2');">Learn More</button>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-1">
+                    <img src="images/icons/handclean.png" class="graphic"> 
+                </div> 
+                <div class="col-9 stay">
+                    <h3 class="title">One-Off Spring Clean</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pharetra mauris a ipsum vestibulum, nec efficitur lacus fringilla. Nam purus erat, tristique nec aliquet faucibus, mattis vel tortor. Pellentesque efficitur arcu eu sem suscipit efficitur. Vivamus aliquet ipsum id maximus feugiat. In vitae enim quis nisl consectetur congue semper nec eros. Quisque gravida purus justo, vel dictum nisi blandit et. Donec condimentum justo et tortor pulvinar malesuada. Curabitur ac libero neque. </p>
+                    <div id="hide3" style="display: none">
+                        <p class="hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pharetra mauris a ipsum vestibulum, nec efficitur lacus fringilla. Nam purus erat, tristique nec aliquet faucibus, mattis vel vel tortor. Pellentesque efficitur arcu eu sem suscipit efficitur. Vivamus aliquet ipsum id maximus feugiat. In vitae enim quis nisl consectetur congue semper nec eros. <a href="services.html#spring">See more...</a></p>
+                    </div>
+                </div>
+                
+                <div class="col-2">
+                    <br>
+                    <button type="button" class="btn btn-warning hp-link" onclick="toggle_visibility('hide3');">Learn More</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+
+    
+<!-- WHY CHOOSE US? -->
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <h1 class="title">Why Choose us?</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pharetra mauris a ipsum vestibulum, nec efficitur lacus fringilla. Nam purus erat, tristique nec aliquet faucibus, mattis vel tortor. Pellentesque efficitur arcu eu sem suscipit efficitur. Vivamus aliquet ipsum id maximus feugiat. In vitae enim quis nisl consectetur congue semper nec eros. Quisque gravida purus justo, vel dictum nisi blandit et. Donec condimentum justo et tortor pulvinar malesuada. Curabitur ac libero neque.</p>
+                <hr>
+                <div class="row dotpoint">
+                    <div class="col-6 dotpoint">
+                        <ul>
+                            <li>5+ years of experience</li>
+                            <li>Affordable prices</li>
+                            <li>Direct customer/cleaner contact</li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <ul>
+                            <li>Trustworthy</li>
+                            <li>Local to North Brisbane</li>
+                            <li>Trained</li>
+                        </ul>
+                    </div>
+                    <br>
+                    <br>
+                    <button type="button" class="btn btn-warning abt" onclick="window.location.href='about.html'">Learn more about us</button>
+                </div>
+            </div>
+           
+            <div class="col-4">
+               <img src="images/icons/mop.png" class="img-fluid" style="height: 350px;">
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+<!-- REVIEWS -->
+    <div class="jumbotron">
+        <div class="container"> 
+            <h2 class="title">Client Testimonials</h2>
+            <script src="https://googlereviews.cws.net/google-reviews.js"></script>
+            <script>load_google_reviews("ChIJp9MhBQG8woARN1lkXDBflME");</script>
+        </div>
+        <br> <hr> <br>
+    <div class="container">
+            <h2 class="title">Interested? Get in contact!</h2>
+            <br>
+            <div class="row">
+                <div class="col-4">
+                    <img src="images/icons/phone.png" class="contact">
+                </div>
+                <div class="col-4">
+                    <img src="images/icons/computer.png" class="contact">
+                </div>
+                <div class="col-4">
+                    <img src="images/icons/email.png" class="contact">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <br>
+                    <h3 class="contact-info">Call Us!</h3>
+                    <p class="contact-info">04123456</p>
+                </div>
+                <div class="col-4">
+                    <br>
+                    <h3 class="contact-info">Want to book now?</h3>
+                </div>
+                 <div class="col-4">
+                    <br>
+                    <h3 class="contact-info">Email Us!</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <br>
+                    <button type="button" class="btn btn-warning contact-button" onclick="window.location.href='tel:04123456'">Call!</button>
+                </div>
+                <div class="col-4">
+                    <br>
+                    <button type="button" class="btn btn-warning contact-button" onclick="window.location.href='book.html'">Book now!</button>
+                </div>
+                <div class="col-4">
+                    <br>
+                    <button type="button" class="btn btn-warning contact-button" onclick="window.location.href='mailto:example@gnmai.com'">Book now!</button>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>      
+</body>    
+    
+<!-- FOOTER -->	
+	
+<footer class="footer-distributed">
+    <div class="footer-right">
+        <a href="https://www.facebook.com/StEugeneCollegeBurpengary/"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/bluthquotes"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.youtube.com/user/steugenecollege"><i class="fa fa-youtube"></i></a>
+    </div>
+    <div class="footer-left">
+
+        <p class="footer-links">
+					
+				<p>Copyright 2018</p>
+			</div>
+		</footer>    
+    
+</html>
